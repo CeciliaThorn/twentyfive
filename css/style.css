@@ -1,0 +1,40 @@
+body {
+}
+
+.wrapper {
+    width: 100vw;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.title_card {
+    display: flex;
+}
+
+.nav_header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Bosses layout*/
+
+#boss_section {
+    margin: 10px;
+    padding: 10px;
+}
+
+.boss_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.how_to_defeat {
+    display: flex;
+    justify-content: space-between;
+}
