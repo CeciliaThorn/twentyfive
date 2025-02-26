@@ -18,6 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    height: 50px;
 
     background-color: blueviolet ;
 }
@@ -25,6 +26,7 @@ header {
 .title_card {
     display: flex;
     align-items: center;
+    width: 50vw;
 
 
     background-color:aliceblue;
@@ -32,6 +34,7 @@ header {
 
 .header_nav {
     width: 30vw;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 
@@ -40,8 +43,14 @@ header {
 
 .nav_tab {
     margin: 0px 5px 0px 5px;
+    width: auto;
+    height: auto;
 
-    background-color: ;
+    background-color:aliceblue ;
+}
+
+#active_tab {
+    background-color: aqua;
 }
 
 /*Bosses layout*/
@@ -60,8 +69,10 @@ header {
     background-color:aquamarine ;
 }
 
-#false_knight{
+.boss_article{
+    padding: 5px;
 
+    background-color: magenta;
 }
 
 .boss_info{
@@ -72,11 +83,14 @@ header {
 }
 
 .attacks{
+    width: 60vw;
+
     background-color: orange;
 }
 
 .boss_aside {
     margin: 10px;
+    width: 30vw;
 
     background-color: aqua;
 }
@@ -90,9 +104,12 @@ header {
 
 .boss_instructions {
     background-color: aliceblue;
+    width: 50vw;
 }
 
 .video_tutorial {
+    width: 50vw;
+
     background-color: red;
 }
 
