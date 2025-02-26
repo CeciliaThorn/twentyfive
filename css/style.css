@@ -1,40 +1,116 @@
 body {
+    padding: 0px 0px 0px 0px;
+
+    background-color:aqua;
 }
 
 .wrapper {
     width: 100vw;
+    margin: 0px 0px 0px 0px;
+
+    background-color:rgb(169, 169, 229) ;
 }
 
 /*Header*/
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100vw;
+
+    background-color: blueviolet ;
 }
 
 .title_card {
     display: flex;
+    align-items: center;
+
+
+    background-color:aliceblue;
 }
 
-.nav_header {
+.header_nav {
+    width: 30vw;
     display: flex;
     justify-content: space-evenly;
+
+    background-color:brown;
+}
+
+.nav_tab {
+    margin: 0px 5px 0px 5px;
+
+    background-color: ;
 }
 
 /*Bosses layout*/
 
+.search_bar{
+    width: 10vw;
+    margin: 10px;
+
+    background-color: aliceblue;
+}
+
 #boss_section {
     margin: 10px;
     padding: 10px;
+
+    background-color:aquamarine ;
+}
+
+#false_knight{
+
 }
 
 .boss_info{
     display: flex;
     justify-content: space-between;
+
+    background-color:beige ;
+}
+
+.attacks{
+    background-color: orange;
+}
+
+.boss_aside {
+    margin: 10px;
+
+    background-color: aqua;
 }
 
 .how_to_defeat {
     display: flex;
     justify-content: space-between;
+
+    background-color:blueviolet ;
+}
+
+.boss_instructions {
+    background-color: aliceblue;
+}
+
+.video_tutorial {
+    background-color: red;
+}
+
+
+/*Nail hit calculation aside*/
+.nail_hit_aside {
+    background-color: blue;
+}
+
+
+.nail_type {
+    display: flex;
+
+    background-color: aqua;
+}
+
+.charms {
+    display: flex;
+
+    background-color: azure;
 }
