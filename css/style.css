@@ -18,7 +18,6 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 50px;
 
     background-color: blueviolet ;
 }
@@ -49,17 +48,64 @@ header {
     background-color:aliceblue ;
 }
 
+a.nav_tab{
+    background-color: red;
+}
+
 #active_tab {
     background-color: aqua;
 }
 
-/*Bosses layout*/
+/*Route Page*/
+#route_list{
+    background-color: blue;
+}
 
-.search_bar{
-    width: 10vw;
-    margin: 10px;
+/*
+.dropdown {
+position: relative;
+display: inline-block;
+}
 
-    background-color: aliceblue;
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+*/
+
+
+/*Boss Page*/
+
+
+.searchbar{
+    height: 30px;
+    width: 250px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 0px 40px 0px 10px;
+    margin: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    outline: none;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.searchbar::placeholder{
+    color: rgb(123, 123, 123);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 
 #boss_section {
@@ -91,23 +137,33 @@ header {
 .boss_aside {
     margin: 10px;
     width: 30vw;
+    padding: 10px;
 
     background-color: aqua;
 }
 
+.boss_img{
+    background-color: aliceblue;
+}
+
 .how_to_defeat {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 
+    'bossinst nailas'
+    'vidtut .'
+    ;
 
     background-color:blueviolet ;
 }
 
 .boss_instructions {
+    grid-area: bossinst;
     background-color: aliceblue;
     width: 50vw;
 }
 
 .video_tutorial {
+    grid-area: vidtut;
     width: 50vw;
 
     background-color: red;
@@ -116,7 +172,9 @@ header {
 
 /*Nail hit calculation aside*/
 .nail_hit_aside {
+    grid-area: nailas;
     background-color: blue;
+    border: solid, 5px, red;
 }
 
 
@@ -130,4 +188,15 @@ header {
     display: flex;
 
     background-color: azure;
+}
+
+.wiki_info{
+    background-color: beige;
+    padding: 10px;
+
+}
+
+.boss_lore{
+    background-color: brown;
+    margin: 20px;
 }
