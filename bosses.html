@@ -8,113 +8,191 @@
 </head>
 <body>
   <div class="wrapper">
-    <div id="contents">
-      <header>
-        <div class="title_card">
-          <img src="" alt="logo_img">
-          <h1 class="page_title">HKSpeedrunHelper</h1>
-        </div>
+    <header>
+      <div class="title_card">
+        <img src="./img/Hollow_Knight_Dash.png" alt="logo_img" id="logo">
+        <h1 class="page_title">HKSpeedrunHelper</h1>
+      </div>
       <nav class="header_nav">
-        <a href="./index.html" target="_self" rel="noopener noreferrer"class="nav_tab">Routes</a>
-        <a href="." target="_self" class="nav_tab" id="active_tab">Bosses</a>
-        <a href="./items.html" target="_self" rel="noopener noreferrer" class="nav_tab">Items</a>
+        <a href="./index.html" target="_self" rel="noopener noreferrer"class="nav_tab"><h1>Routes</h1></a>
+        <a href="." target="_self" class="nav_tab" id="active_tab"><h1>Bosses</h1></a>
+        <a href="./items.html" target="_self" rel="noopener noreferrer" class="nav_tab"><h1>Items</h1></a>
       </nav>
-      </header>
+    </header>
+    <div id="contents">
+      <h1 class="page_title">Bosses</h1>
       <input type="text" class="searchbar" placeholder="Search...">
       <section id="boss_section">
         <article class="boss_article">
           <article class="boss_info">
             <div class="stats">
               <h1>False Knight</h1>
+              <p class="hunter_quote"><em>A maggot driven mad by a strange force. Inhabits a stolen armoured shell.</em></p>
               <div class="attacks">
                 <h2>Attacks</h2>
                   <ul>
-                    <li><h3>Attack 1</h3></li>
-                    <li><h3>Attack 2</h3></li>
-                    <li><h3>Attack 3</h3></li>
+                    <li><h3>Leap: </h3>
+                    <p>False Knight jumps a distance in the air to either reposition or prepare for a Slam attack. False Knight does not leap twice in a row. False Knight stops using this move in Phase 3.</p></li>
+                    <li><h3>Charge: </h3>
+                    <p>False Knight runs a small distance to get closer if the Knight is too far away and performs a Leaping Bludgeon attack at the end of the charge.</p></li>
+                    <li><h3>Slam: </h3>
+                    <p>False Knight rears back, priming his mace for a moment, before swinging it forward, slamming it into the ground. The impact of the mace creates a shockwave that travels forward across the whole arena. In Phase 2, this attack also causes barrels to fall, and in Phase 3, even more barrels fall per slam.</p></li>
+                    <li><h3>Leaping Bludgeon: </h3>
+                    <p>False Knight leaps into the air and slams his mace down in front of him when he lands. False Knight targets the Knight when he leaps so he strikes where the Knight was when he started his leap. While False Knight is in the air, he lifts his mace above his head and then swings it in an overhead arc before he lands, bringing his large body and mace down simultaneously. In Phase 3, this attack also causes barrels to fall.</p></li>
+                    <li><h3>Rage: </h3>
+                    <p>After enough damage is dealt to his armour, False Knight staggers, falling down and revealing the Maggot inside the armour. When the Maggot takes enough damage, it re-enters the armour and initiates this attack. Jumping to the centre of the arena, False Knight slams his mace multiple times on his left and right. Each time the mace strikes the ground, barrels fall from the ceiling. False Knight continues to slam the ground with his mace for about three seconds. If the Maggot is left to stagger for too long without being attacked, False Knight gets back up and continues his regular attacks without going into Rage.</p></li>
                   </ul>
               </div>
             </div>
             <aside class="boss_aside">
-              <p>Normal   Dreamer</p>
-              <img src="" alt="false_knight_img" class="boss_img">
-              <table>
-                <caption>Stats</caption>
-                <tr>
-                  <th>Health</th>
-                  <td>- - -</td>
-                </tr>
-                <tr>
-                  <th>Damage Dealt</th>
-                  <td>- - -</td>
-                </tr>
-                  <th>Location</th>
-                  <td>- - -</td>
-                </tr>
-              </table>
+              <div class="boss_version">
+                <a href="#" target="_self">Normal</a>  ||  <a href="#" target="_self">Dreamer</a>
+              </div>
+              <img src="./img/False_Knight_Render.webp" alt="false_knight_img" class="boss_img">
+              <div class="boss_stats">
+                <table>
+                  <caption>Stats</caption>
+                  <tr>
+                    <th>Health</th>
+                    <td>255</td>
+                  </tr>
+                  <tr>
+                    <th>Damage Dealt</th>
+                    <td>1 Mask</td>
+                  </tr>
+                    <th>Location</th>
+                    <td>Forgotten Crossroads</td>
+                  </tr>
+                </table>
+              </div>
             </aside>
           </article>
           <article class="how_to_defeat">
-            <div class="boss_instructions">
-              <h2>How to defeat</h2>
-                <ul>
-                  <li>tip/instruction</li>
-                  <li>tip/instruction</li>
-                  <li>tip/instruction</li>
-                  <li>tip/instruction</li>
-                  <li>tip/instruction</li>
-                </ul>
-            </div>
-            <div class="video_tutorial">
-              <h3>Video tutorial:</h3>
-              <img src="" alt="video tutorial false knight">
+            <div id="how_to_defeat_info">
+              <div class="boss_instructions">
+                <h2>How to defeat</h2>
+                  <p>False Knight has 3 main phases, after of which he enters a defeat phase in which you are free to attack him.</p>
+                  <div class="tips"><strong>Tip:</strong> False Knight staggers after 13 hits with the un-upgraded nail, whereafter he enters a Rage phase in the middle of the arena. By continuously pushing him to a rage phase and then hiding in the corners of the arena, the fight can be over quickly.</div>
+                  <p>When False Knight Leaps towards you, either to readjust or to enter a Leaping Bludgeon, go forwards and under to avoid any damage.</p>
+                  <p>When False Knight enters a Slam, walk away and then jump over the resulting wave to minimise the risk of damage.</p>
+              </div>
+              <div class="video_tutorial">
+                <h3>Video tutorial:</h3>
+                <iframe width="420" height="315"
+                  src="https://www.youtube.com/watch?v=aSQjIsbXx_8">
+                </iframe>
+              </div>
             </div>
             <aside class="nail_hit_aside">
-              <h3>Nr. of nail hits</h3>
-              <p>Nail upgrades:</p>
+              <h3>Nail hit calculator</h3>
+              <p>Nail:</p>
                 <ul class="nail_type">
-                  <li>Nail 1</li>
-                  <li>Nail 2</li>
-                  <li>Nail 3</li>
+                  <img src="./img/Nail_1_Old_Nail.webp" alt="nail 1" class="nail_img">
+                  <img src="./img/Nail_2_Sharpened_Nail.webp" alt="nail 2" class="nail_img">
+                  <img src="./img/Nail_3_Channelled_Nail.webp" alt="nail 3" class="nail_img">
+                  <img src="./img/Nail_4_Coiled_Nail.webp" alt="nail 4" class="nail_img">
+                  <img src="./img/Nail_5_Pure_Nail.webp" alt="nail 5" class="nail_img">
                 </ul>
-                <p>Charms</p>
+                <p>Charms:</p>
                   <ul class="charms">
-                    <li>Charm 1</li>
-                    <li>Charm 2</li>
-                    <li>Charm 3</li>
-                    <li>Charm 4</li>
-                    <li>Charm 5</li>
+                    <img src="./img/Fury_of_the_Fallen.webp" alt="fury of the fallen charm" class="equipped_charms">
+                    <img src="./img/Unbreakable_Strength.webp" alt="unbreakable strength charm" class="equipped_charms">
                   </ul>
-                  <h3 class="claculated_hits">Hits: xx</h3>
+                  <h3 class="calculated_hits">Hits: 30</h3>
             </aside>
           </article>
           <article class="wiki_info">
-            <p>general information</p>
-            <div class="boss_lore">lore</div>
+            <div class="boss_lore">False Knight is a Maggot wearing the armour of Hegemol, one of the Five Great Knights of Hallownest. This weak creature wanted to find means to protect his siblings who live in an abandoned storeroom in the middle of the Forgotten Crossroads. When he discovered Hegemol sleeping in his armoured shell, he took it for himself, hoping for the great strength that wearing the armour seemed to promise. Even though madness did not drive him to do this, False Knight eventually fell to the Infection's control.</div>
+          </article>
+        </article>
+        <article class="boss_article">
+          <article class="boss_info">
+            <div class="stats">
+              <h1>Brooding Mawlek</h1>
+              <p class="hunter_quote"><em>Ferocious but extremely social creature. Becomes aggressive if not able to mingle with its own kind.</em></p>
+              <div class="attacks">
+                <h2>Attacks</h2>
+                  <ul>
+                    <li><h3>Slash: </h3>
+                    <p>Brooding Mawlek uses either of its claws to perform a downward slash towards the Knight. It only uses this attack if the Knight gets too close and can use it in conjunction with the Spit attack.</p></li>
+                    <li><h3>Spit: </h3>
+                    <p>Brooding Mawlek spits blobs of Infection in parabolic arcs at regular intervals while skittering slowly across the ground. These blobs fly towards whichever side of the arena the Knight happens to be standing on. This attack can happen in conjunction with the Slash Attack. Brooding Mawlek spits 3-4 times before either performing a Leap or a Vomit.</p></li>
+                    <li><h3>Leap: </h3>
+                    <p>Brooding Mawlek leaps to the Knight's location, landing where the Knight was at the beginning of its leap. Then, it immediately follows that leap with a jump back to the original position of where it landed at the start of the fight.</p></li>
+                    <li><h3>Leaping Bludgeon: </h3>
+                    <p>False Knight leaps into the air and slams his mace down in front of him when he lands. False Knight targets the Knight when he leaps so he strikes where the Knight was when he started his leap. While False Knight is in the air, he lifts his mace above his head and then swings it in an overhead arc before he lands, bringing his large body and mace down simultaneously. In Phase 3, this attack also causes barrels to fall.</p></li>
+                    <li><h3>Vomit: </h3>
+                    <p>Brooding Mawlek shoots a multitude of blobs of Infection in a parabolic arc simultaneously. These blobs fly towards whichever side of the arena the Knight happens to be standing on at the time. Brooding Mawlek stands idle until all the blobs have made contact with the ground.</p></li>
+                  </ul>
+              </div>
+            </div>
+            <aside class="boss_aside">
+              <div class="boss_version">
+                <a href="#" target="_self">Normal</a>  ||  <a href="#" target="_self">Dreamer</a>
+              </div>
+              <img src="./img/B_Brooding_Mawlek2.webp" alt="brooding_mawlek_img" class="boss_img">
+              <div class="boss_stats">
+                <table>
+                  <caption>Stats</caption>
+                  <tr>
+                    <th>Health</th>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <th>Damage Dealt</th>
+                    <td>1 Mask</td>
+                  </tr>
+                    <th>Location</th>
+                    <td>Forgotten Crossroads</td>
+                  </tr>
+                </table>
+              </div>
+            </aside>
+          </article>
+          <article class="how_to_defeat">
+            <div id="how_to_defeat_info">
+              <div class="boss_instructions">
+                <h2>How to defeat</h2>
+                  <div class="tips"><strong>Tip:</strong> To dodge the Brooding Mawlek's leap, the Knight needs to run quickly in whichever direction they have space to move. This is also an opportunity to hit the Brooding Mawlek, which cannot Spit or Slash while in the air.</div>
+                  <p>If the Knight has managed to obtain the Baldur Shell Charm and the Cyclone Slash Nail Art, it is possible to chip away at the Brooding Mawlek's health with the edge of Cyclone Slash and use the SOUL gained from the attack to heal safely inside Baldur Shell. While using Baldur Shell, the Knight can also enter into the body of the Brooding Mawlek without taking damage, allowing them to heal while it attacks.</p>
+                  <p>When the Brooding Mawlek uses the Vomit attack, it is possible to safely dash over them with the Mothwing Cloak before the acid comes down. There are also some small safe spots in between the projectiles. It is also possible to Nail-bounce over to the other side.</p>
+                  <p>If the Knight has the Sharp Shadow Charm, it can be used to dash through the Brooding Mawlek and deal damage.</p>
+                  <p>Mark of Pride and Longnail make it easier to damage Brooding Mawlek when it performs the Slash attack while avoiding damage.</p>
+                </div>
+              <div class="video_tutorial">
+                <h3>Video tutorial:</h3>
+                <iframe width="420" height="315"
+                  src="https://www.youtube.com/watch?v=aSQjIsbXx_8">
+                </iframe>
+              </div>
+            </div>
+            <aside class="nail_hit_aside">
+              <h3>Nail hit calculator</h3>
+              <p>Nail:</p>
+                <ul class="nail_type">
+                  <img src="./img/Nail_1_Old_Nail.webp" alt="nail 1" class="nail_img">
+                  <img src="./img/Nail_2_Sharpened_Nail.webp" alt="nail 2" class="nail_img">
+                  <img src="./img/Nail_3_Channelled_Nail.webp" alt="nail 3" class="nail_img">
+                  <img src="./img/Nail_4_Coiled_Nail.webp" alt="nail 4" class="nail_img">
+                  <img src="./img/Nail_5_Pure_Nail.webp" alt="nail 5" class="nail_img">
+                </ul>
+                <p>Charms:</p>
+                  <ul class="charms">
+                    <img src="./img/Fury_of_the_Fallen.webp" alt="fury of the fallen charm" class="equipped_charms">
+                    <img src="./img/Unbreakable_Strength.webp" alt="unbreakable strength charm" class="equipped_charms">
+                  </ul>
+                  <h3 class="calculated_hits">Hits: 30</h3>
+            </aside>
+          </article>
+          <article class="wiki_info">
+            <div class="boss_lore">One lone Brooding Mawlek can be found off-road in the Forgotten Crossroads(Infected Crossroads), far from its living brethren in the Ancient Basin. It sits amidst fossilised remains of its kind and calls for them to breed. This wild beast was driven mad both by its loneliness and the Infection which started covering its body with bulbs.</div>
           </article>
         </article>
       </section>
     </div>
     <footer>
-      <h2>footer</h2>
-      <table>
-        <tr>
-          <th>blank</th>
-          <th>blank</th>
-          <th>blank</th>
-          
-        </tr>
-        <tr>
-          <td>blank</td>
-          <td>blank</td>
-          <td>blank</td>
-        </tr>
-        <tr>
-          <td>blank</td>
-          <td>blank</td>
-          <td>blank</td>
-        </tr>
-      </table>
+      <h2>Missed something?</h2>
+      <p>Contact us at:  not.a.real@gmail.com  or  +47 474 74 74</p>
     </footer>
   </div>
 </body>
