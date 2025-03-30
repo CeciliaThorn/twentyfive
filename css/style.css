@@ -66,7 +66,6 @@ header {
 a.nav_tab{
     align-self: stretch;
     background-color: rgb(189, 181, 163);
-    padding: auto;
     text-decoration: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -272,7 +271,7 @@ footer{
 
 }
 
-#how_to_defeat_info{
+.how_to_defeat_info{
 
     background-color:rgba(122, 87, 11, 0.3) ;
     border-left:rgba(122, 87, 11, 0.3) 10px solid;
